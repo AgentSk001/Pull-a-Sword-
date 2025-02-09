@@ -101,5 +101,5 @@ game:GetService("ReplicatedStorage").GetCreditsEvent:FireServer()
     end
 end)
 
-KillingCheatss:CreateButton("KaaluRaam", function(coll)
+KillingCheatss:CreateButton("KaaluRam", function(coll)
 end)
