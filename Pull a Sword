@@ -53,14 +53,14 @@ game:GetService("ReplicatedStorage").RemoveC:FireServer(unpack(args))
 end)
 
 
-KillingCheatss:CreateToggle("Auto Win Turtle", function(coll)
+KillingCheatss:CreateToggle("Auto Win cow", function(coll)
     getgenv().coll = coll
     while getgenv().coll do
         task.wait()
         pcall(function()
              
   local args = {
-    [1] = "9"
+    [1] = "10"
 }
 
 game:GetService("ReplicatedStorage").HALLOWEEN2024FOLDER.WinEvent:FireServer(unpack(args))
