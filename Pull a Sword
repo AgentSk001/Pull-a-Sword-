@@ -56,7 +56,7 @@ end)
 KillingCheatss:CreateToggle("Auto Win cow", function(coll)
     getgenv().coll = coll
     while getgenv().coll do
-        task.wait()
+        task.wait(0.7)
         pcall(function()
              
   local args = {
@@ -92,7 +92,7 @@ KillingCheatss:CreateToggle("Auto Collect Credits", function(coll)
     
     getgenv().coll = coll
     while getgenv().coll do
-        task.wait(7)
+        task.wait(1)
         pcall(function()
           
 game:GetService("ReplicatedStorage").GetCreditsEvent:FireServer()
