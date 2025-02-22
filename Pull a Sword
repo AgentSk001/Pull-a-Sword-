@@ -78,7 +78,7 @@ KillingCheatss:CreateToggle("Auto Collect Credits", function(coll)
         task.wait(600)
         pcall(function()
           
-game:GetService("ReplicatedStorage").GetCreditsEvent:FireServer()
+game:GetService("ReplicatedStorage").GetCreditsEvent:FireServer(
 
         end)
     end
