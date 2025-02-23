@@ -6,7 +6,7 @@ local KillingCheatss = PhantomForcesWindow:NewSection("Auto Farm")
 KillingCheatss:CreateToggle("Auto Click", function(coll)
     getgenv().coll = coll
     while getgenv().coll do
-        task.wait(0.2)
+        task.wait(0.4)
         pcall(function()
              
   local args = {
@@ -14,7 +14,8 @@ KillingCheatss:CreateToggle("Auto Click", function(coll)
     [2] = true
 }
 
-game:GetService("ReplicatedStorage").ClickEvent:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes.Events.ClickEvent:FireServer(unpack(args))
+
 
         end)
     end
@@ -30,7 +31,7 @@ KillingCheatss:CreateToggle("Auto Fight ON", function(coll)
     [1] = 1
 }
 
-game:GetService("ReplicatedStorage").RemoveC:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes.Events.RemoveC:FireServer(unpack(args))
 
         end)
     end
@@ -46,24 +47,26 @@ local args = {
     [1] = 0
 }
 
-game:GetService("ReplicatedStorage").RemoveC:FireServer(unpack(args))
+game:GetService("ReplicatedStorage").Remotes.Events.RemoveC:FireServer(unpack(args))
 
         end)
     end
 end)
 
 
-KillingCheatss:CreateToggle("Auto Win Cow", function(coll)
+KillingCheatss:CreateToggle("Auto Win Billy", function(coll)
     getgenv().coll = coll
     while getgenv().coll do
-        task.wait(0.5)
+        task.wait(0.7)
         pcall(function()
              
   local args = {
-    [1] = "10"
+    [1] = "15",
+    [2] = false
 }
 
 game:GetService("ReplicatedStorage").HALLOWEEN2024FOLDER.WinEvent:FireServer(unpack(args))
+
 
         end)
     end
@@ -87,10 +90,28 @@ end)
 
 local KillingCheatss = PhantomForcesWindow:NewSection("Eggs")
 
+KillingCheatss:CreateToggle("Egg 6k", function(coll)
+    getgenv().coll = coll
+    while getgenv().coll do
+        task.wait(1)
+        pcall(function()
+          
+local args = {
+    [1] = "Hall Egg3",
+    [2] = "Buy1"
+}
+
+game:GetService("ReplicatedStorage").GameClient.Events.RemoteFunction.BuyEgg:InvokeServer(unpack(args))
+
+        end)
+    end
+end)
+
+
 KillingCheatss:CreateToggle("Egg 250", function(coll)
     getgenv().coll = coll
     while getgenv().coll do
-        task.wait(0.5)
+        task.wait(1)
         pcall(function()
           
 local args = {
@@ -107,7 +128,7 @@ end)
 KillingCheatss:CreateToggle("Egg 3.5k", function(coll)
     getgenv().coll = coll
     while getgenv().coll do
-        task.wait(0.5)
+        task.wait(1)
         pcall(function()
           
 local args = {
