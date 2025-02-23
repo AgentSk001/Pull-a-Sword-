@@ -6,7 +6,7 @@ local KillingCheatss = PhantomForcesWindow:NewSection("Auto Farm")
 KillingCheatss:CreateToggle("Auto Click", function(coll)
     getgenv().coll = coll
     while getgenv().coll do
-        task.wait(0.4)
+        task.wait(0.7)
         pcall(function()
              
   local args = {
@@ -57,7 +57,7 @@ end)
 KillingCheatss:CreateToggle("Auto Win Billy", function(coll)
     getgenv().coll = coll
     while getgenv().coll do
-        task.wait(0.7)
+        task.wait(0.8)
         pcall(function()
              
   local args = {
