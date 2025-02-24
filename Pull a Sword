@@ -59,7 +59,7 @@ end)
 KillingCheatss:CreateToggle("Auto Win Billy", function(coll)
     getgenv().coll = coll
     while getgenv().coll do
-        task.wait(1.5)
+        task.wait(1)
         pcall(function()
              
   local args = {
