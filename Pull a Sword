@@ -6,7 +6,7 @@ local KillingCheatss = PhantomForcesWindow:NewSection("Event")
 KillingCheatss:CreateToggle("Auto Click", function(coll)
     getgenv().coll = coll
     while getgenv().coll do
-        task.wait(0.7)
+        task.wait(0.4)
         pcall(function()
              
   local args = {
